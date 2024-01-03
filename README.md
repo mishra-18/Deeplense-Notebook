@@ -21,6 +21,7 @@ Dataset Description: The Dataset consists of three classes, strong lensing image
 
 Evaluation Metrics: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve) 
 
+![Screenshot 2024-01-03 105635](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/f74c0c69-3874-4904-93bf-fb2b1920670a)
 
 ## Specific Test III. Learning Mass of Dark Matter Halo 
 
@@ -33,3 +34,5 @@ Dataset: https://drive.google.com/file/d/1hu472ALwGPBcTCXSAM0VoCWmTktg9j-j/view
 Dataset Description: The data set consists of strong lensing images for cold dark matter with subhalo substructure. For each lensing image the corresponding fraction of mass in dark matter substructure is provided.
 
 Evaluation Metrics: MSE (mean squared error)
+
+![Screenshot 2024-01-03 105705](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/29cf9165-c2f8-4be6-a1f9-9bcca0fa70a5)
