@@ -1,38 +1,36 @@
-This is my repository for the solution to the evaluation tasks in the form of notebooks.
+### SSL on Real Dataset
+
+There are Two specific notebooks:
+
+* SSL_dinomodel
+
+   **Weights**: [dino_model_final.pth](https://drive.google.com/file/d/1_pKESS9DmMRUZN8XBuEdoHdW1TQd0Zww/view?usp=sharing)
+
+* dino_model
+
+  **Weights**: [dino_model_test.pth](https://drive.google.com/file/d/1OTw18pRL1SV99ueDcTHL7iFcknNjv3HK/view?usp=sharing)
 
 
+**Dataset**: [Drive](https://drive.google.com/file/d/1aafE2nDp7S6j59sZcBIzP3FnQxVCmHCx/view)
 
-## trained model Weights can be accessed from here
+**Dataset Description**: The Dataset consists of two classes, strong lensing images with lenses and non-lenses in npy format. For non-lensing images, the images start with nl_. These images are from the Hubble Space Telescope. 
+Evaluation Metrics: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve). Although the dataset is small and results may not be perfect, the pipeline should be such that with more data, the model could achieve high performance. 
 
-[Classification_modelWeights](https://drive.google.com/file/d/1QPdJI2yWdM47B_j4vULs4ObhGXIRjFZU/view?usp=sharing)
+### Multi-Class Classification
 
-[regression_modelWeights](https://drive.google.com/file/d/1fvR47IPpZGlhsT0P59nuj3WDcrEMZh-u/view?usp=sharing)
+weights: [classification_model.pth](https://drive.google.com/file/d/1c9UipjdKYQyznsY2M7FbdvPbb6U_xRox/view?usp=sharing)
 
 
-## Common Test I. Multi-Class Classification 
+**Dataset**: [Drive](https://drive.google.com/file/d/1ZEyNMEO43u3qhJAwJeBZxFBEYc_pVYZQ/view)
 
-(the respective solution notebook can be found [here](https://github.com/sam5658/DeepLense/blob/main/classification.ipynb) )
-
-Task: Build a model for classifying the images into lenses using PyTorch or Keras. Pick the most appropriate approach and discuss your strategy.
-
-Dataset: [dataset.zip - Google Drive](https://drive.google.com/file/d/1B_UZtU4W65ZViTJsLeFfvK-xXCYUhw2A/view)
-
-Dataset Description: The Dataset consists of three classes, strong lensing images with no substructure, subhalo substructure, and vortex substructure. The images have been normalized using min-max normalization, but you are free to use any normalization or data augmentation methods to improve your results.
-
+**Dataset Description**: The Dataset consists of three classes, strong lensing images with no substructure, subhalo substructure, and vortex substructure. The images have been normalized using min-max normalization, but you are free to use any normalization or data augmentation methods to improve your results.
 Evaluation Metrics: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve) 
 
-![Screenshot 2024-01-03 105635](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/f74c0c69-3874-4904-93bf-fb2b1920670a)
 
-## Specific Test III. Learning Mass of Dark Matter Halo 
+### Learning Mass of Dark Matter Halo 
 
-(respective solution notebook can be found [here](https://github.com/sam5658/DeepLense/blob/main/classification.ipynb) )
+Using the provided dataset to implement a regression algorithm to learn the mapping between lensing images and the lensing dark matter halo mass.
 
-Task: Using the provided dataset implement a regression algorithm to learn the mapping between lensing images and the lensing dark matter halo mass. You can use the machine learning algorithm of your choice.  Please implement your approach in PyTorch or Keras and discuss your strategy.	
+**Dataset**: https://drive.google.com/file/d/1hu472ALwGPBcTCXSAM0VoCWmTktg9j-j/view
 
-Dataset: https://drive.google.com/file/d/1hu472ALwGPBcTCXSAM0VoCWmTktg9j-j/view
-
-Dataset Description: The data set consists of strong lensing images for cold dark matter with subhalo substructure. For each lensing image the corresponding fraction of mass in dark matter substructure is provided.
-
-Evaluation Metrics: MSE (mean squared error)
-
-![Screenshot 2024-01-03 105705](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/29cf9165-c2f8-4be6-a1f9-9bcca0fa70a5)
+**Dataset Description**: The data set consists of strong lensing images for cold dark matter with subhalo substructure. For each lensing image the corresponding fraction of mass in dark matter substructure is provided. Evaluation Metrics: MSE (mean squared error)
