@@ -1,4 +1,4 @@
-### SSL on Real Dataset
+## Self-Supervised Learning (SSL) on Real Dataset
 
 There are Two specific notebooks:
 
@@ -16,7 +16,7 @@ There are Two specific notebooks:
 **Dataset Description**: The Dataset consists of two classes, strong lensing images with lenses and non-lenses in npy format. For non-lensing images, the images start with nl_. These images are from the Hubble Space Telescope. 
 Evaluation Metrics: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve). Although the dataset is small and results may not be perfect, the pipeline should be such that with more data, the model could achieve high performance. 
 
-### Multi-Class Classification
+## Multi-Class Classification
 
 weights: [classification_model.pth](https://drive.google.com/file/d/1c9UipjdKYQyznsY2M7FbdvPbb6U_xRox/view?usp=sharing)
 
@@ -27,10 +27,15 @@ weights: [classification_model.pth](https://drive.google.com/file/d/1c9UipjdKYQy
 Evaluation Metrics: ROC curve (Receiver Operating Characteristic curve) and AUC score (Area Under the ROC Curve) 
 
 
-### Learning Mass of Dark Matter Halo 
+![Screenshot 2024-01-03 105635](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/f74c0c69-3874-4904-93bf-fb2b1920670a)
+
+
+## Learning Mass of Dark Matter Halo 
 
 Using the provided dataset to implement a regression algorithm to learn the mapping between lensing images and the lensing dark matter halo mass.
 
 **Dataset**: https://drive.google.com/file/d/1hu472ALwGPBcTCXSAM0VoCWmTktg9j-j/view
 
 **Dataset Description**: The data set consists of strong lensing images for cold dark matter with subhalo substructure. For each lensing image the corresponding fraction of mass in dark matter substructure is provided. Evaluation Metrics: MSE (mean squared error)
+
+![Screenshot 2024-01-03 105705](https://github.com/mishra-18/Deeplense-Notebook/assets/155224614/29cf9165-c2f8-4be6-a1f9-9bcca0fa70a5)
